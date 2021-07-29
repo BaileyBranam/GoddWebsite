@@ -1,3 +1,12 @@
+<?php
+session_start();
+if (empty($_SESSION['token'])) {
+    $_SESSION['token'] = bin2hex(random_bytes(32));
+}
+$token = $_SESSION['token'];
+  
+  echo <<<HTML
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -31,7 +40,7 @@
 
     <script data-ad-client="ca-pub-7590043093343103" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-    <meta name="csrf-token" content="apTEl6F2GhUXgAjwRFWwOcWb2hau5TTrPfcAmL3s">
+    <meta name="csrf-token" content="$token">
 
 	<style type="text/css">
 	html {
@@ -71,3 +80,6 @@
 	<script src="https://plugged.pro/assets/bulma/0.8.2/js/bulma.js"></script>
 </body>
 </html>
+HTML;
+
+?>
