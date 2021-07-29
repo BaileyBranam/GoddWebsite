@@ -3,8 +3,7 @@
 	<meta charset="utf-8">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<title>Plugged ✨ - Welcome!</title>
-	<meta content="Your #1 account supplier, first come first serve!" name="description">
+	<title>Godd Refunding Services - Welcome</title>
 	<meta content="website" property="og:type">
 	<meta content="Plugged ✨" property="og:site_name">
 	<meta content="Plugged ✨ - Welcome!" property="og:title">
@@ -62,7 +61,12 @@
 		<div class="content">
 						<h1>To access plugged ✨, log in with Telegram</h1>
 			<br>
-			<script async src="https://telegram.org/js/telegram-widget.js?11" data-telegram-login="jerplug_bot" data-size="large" data-auth-url="https://plugged.pro/auth/telegram/callback" data-request-access="write"></script>
+			<script async src="https://telegram.org/js/telegram-widget.js?15" data-telegram-login="GoddRefundingBot" data-size="large" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
+<script type="text/javascript">
+  function onTelegramAuth(user) {
+    alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
+  }
+</script>
 			<p>join 6,311 others</p>
 			<p>Having troubles logging in? Turn on cross-site tracking. Click <a target="_blank" href="https://support.panopto.com/s/article/How-to-Enable-Third-Party-Cookies-in-Supported-Browsers">here</a> to find out how.
 		</div>
