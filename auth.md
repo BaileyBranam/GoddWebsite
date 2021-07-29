@@ -1,3 +1,3 @@
 layout: page
 title: "Lern"
-permalink: /auth/telegram/callback
+permalink: /GoddWebsite/auth/telegram/callback
